@@ -43,7 +43,7 @@ jobs:
           wget https://patch-diff.githubusercontent.com/raw/openwrt/openwrt/pull/3661.patch
           patch -p1 < 3661.patch
           sed -i '47a \	elecom,wab-i1750-ps|\\' ./target/linux/ath79/generic/base-files/etc/hotplug.d/firmware/10-ath9k-eeprom
-          sed -i '75a \	elecom,wab-i1750-ps|\\' ./target/linux/ath79/generic/base-files/etc/hotplug.d/firmware/11-ath10k-caldata
+          sed -i '87a \	elecom,wab-i1750-ps|\\' ./target/linux/ath79/generic/base-files/etc/hotplug.d/firmware/11-ath10k-caldata
         working-directory: openwrt
 
       - name: Install feeds
